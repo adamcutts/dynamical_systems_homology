@@ -66,9 +66,24 @@ Here is the resultant plot, where the length of the longest barcode is chosen as
 
 There is no legend here, but (using the viridis colour map from matplotlib) yellow corresponds to long longest bars (i.e. a cycle at a large range of scales) and dark blue corresponds to a short longest bar.
 
-It's worth comparing this plot to a plot of the delay embedding at various points in the grid. We see regions of different types of trajectories. 
+It's worth comparing this plot to a plot of the delay embedding at various points in the grid. We see regions of different types of trajectories:
 
+![traj_grid](highres.png)
 
+## Conclusion
+The plot is surprisingly pretty and interesting in its own right. Firstly, it exhibits the rotational symmetry of the vector field. It also splits the phase space into three distint regions:
+
+1. comets in the lower left and upper right, of consistent high value of the length of the longest bar;
+2. round blobs of low value in the upper left and lower right;
+3. noise elsewhere.
+
+The reason why this is suprising is that the length of the longest bar in the persistence barcode isn't a priori a very interesting statistic. In fact, it was chosen arbitrarily as a simple and quick to compute value. 
+
+The noise (and lack thereof in regions 1. and 2.) is interesting from a chaos theory perspective: if the persistence barcodes do indeed provide good representations of the topology of the underlying attractors, and the system is chaotic, then this noise is in some sense inevitable.
+
+More insightful statistics are a potential next avenue for this research. In [^6] various vectorisation methods for persistence barcodes are discussed. This paper suggests the so-called 'persistence statistics' provide a good vector representation of barcodes, in the sense of machine learning features. 
+
+Another avenue worth pursuing is generating plots with more than one feature in mind. In fact, RGB space has the advantage of being a 3-dimensional space, allowing up to three features to be meaningfully plotted at once. This has great potential to provide even more ways to visually separate the state space.
 
 ---
 ## References
@@ -77,3 +92,4 @@ It's worth comparing this plot to a plot of the delay embedding at various point
 [^3]: Gunnar Carlsson. "Topology and Data". American Mathematical Society. S 0273-0979(09)01249-X, 2009
 [^4]: Florens Takens. 
 [^5]: https://giotto-ai.github.io/gtda-docs/0.5.1/notebooks/topology_time_series.html#picking-the-embedding-dimension-and-time-delay
+[^6]: 
