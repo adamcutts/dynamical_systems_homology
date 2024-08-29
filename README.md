@@ -15,7 +15,6 @@ Such questions are trivial to analyse in low dimensions. For instance, if $X$ is
 
 This code explores categorising the long-run dynamics of a dynamical system by exploring the topology of its attractors. Following along the lines of [^2], we investigate the so-called double-gyre system. However, where [^2] explores the BraMAH approach, we instead seek to use the tools of persistent homology [^3].
 
----
 ## Setup
 The double-gyre system models oscillating jets of water in 2-dimensions. It has the advantage that the domain of definition is invariant in the sense that the vector field has 0 normal component at the boundary. It is defined on the state space $[0,2]\times [0,1]$, with the following vector field: 
 ```math
