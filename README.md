@@ -50,10 +50,15 @@ Also in [^5], the authors suggest using mutual information as a tool to find 'ni
 
 Specifically, [^5] suggests to increase $T$ until the first local minimum of mutual information is found. The file `mutual_info_test.py` explores this idea, plotting the delay embedding with dimension 2 for various values of the delay $T$. An example of such a plot is listed below. The colour represents the mutual information; red is high, green is low.
 
-```
-markdown test:
-  indent test
-```
+![test](mutual_info_demo.png)
+
+## Persistence barcodes
+At this stage, we can calculate Takens' embedding for each initial point in the state space $[0, 2] \times [0, 1]$. The topology of the embedding is investigated using homology. Roughly speaking, homology characterises the amount of 'n-dimensional holes' in a topological space, for positive integers n. Point clouds themselves are not topologically interesting; however, thickening each point the ball of radius $\epsilon$ can give more interesting topological spaces, that provide a good model for the 'real' topology of the point cloud. Choosing a good representative scale $\epsilon$ is a difficult task.
+
+The idea of persistent homology is to consider the homology of the $\epsilon$-thickening over a range of values of $\epsilon$. This returns an object called a persistence barcode. For more information see [^3].
+
+The Ripser package in Python gives a fast way to compute these barcodes.   
+
 ---
 ## References
 [^1]: Steven H. Strogatz. "Nonlinear Dynamics and Chaos", 1994 
