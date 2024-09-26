@@ -59,7 +59,7 @@ The idea of persistent homology is to consider the homology of the $\epsilon$-th
 The Ripser package in Python gives a fast way to compute these barcodes. In `persistence_grid_length.py` is the file for computing the persistence barcodes of the delay embedding for each initial point, along with plotting a chosen statistic of these barcodes.
 
 ## Results
-Here is the resultant plot, where the length of the longest barcode is chosen as the relevant statistic.
+Here is the resultant plot, where the length of the longest bar in the 1-dimensional barcode is chosen as the relevant statistic.
 
 ![length_grid](longest_bar_grid_highres.png)
 
