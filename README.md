@@ -3,7 +3,7 @@
 ### <p align="center">Adam Cutts</p>
 
 ---
-Many thanks to my supervisor Ximena Fernandez at Oxford's Mathematical Institute for her helpful guidance and feedback throughout this project.
+Many thanks to my supervisor Dr. Ximena Fernandez at Oxford's Mathematical Institute for her helpful guidance and feedback throughout this project.
 
 ---
 ## Introduction
