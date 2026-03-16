@@ -1,6 +1,4 @@
-# <p align="center">An investigation into classification of initial conditions of dynamical systems using persistent homology</p>
-
-### <p align="center">Adam Cutts</p>
+# An investigation into classification of initial conditions of dynamical systems using persistent homology
 
 ---
 Many thanks to my supervisor Dr. Ximena Fernandez at Oxford's Mathematical Institute for her helpful guidance and feedback throughout this project.
